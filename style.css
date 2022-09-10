@@ -1,0 +1,13 @@
+.square{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
