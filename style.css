@@ -1,13 +1,29 @@
+body{
+    display:flex;
+    flex-direction: column;
+    flex:none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap:10px
+}
+
+#container{
+    border: solid black;
+    border-width: 10px;
+}
+
 .square{
-    height: 50px;
-    width: 50px;
     background-color: black;
+}
+
+.square:hover{
+    background-color: white;
 }
 
 .row{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    margin: 10px;
+    min-height: 10%;
 }
