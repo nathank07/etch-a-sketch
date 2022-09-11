@@ -5,10 +5,10 @@ let squareSize = 600 / gridSize;
 const button = document.querySelector("button");
 button.addEventListener('click', (event) => {
     let size = prompt("What would you like your grid size to be? (1-100)");
-    squareSize = 600 / size;
+    squareSize = 600 / changeGridSize(size);
     if(isNaN(size) == false){
         destroyGrid();
-        createGrid(size);
+        createGrid(changeGridSize(size));
     }
     else{
         alert(size + " is not a valid number!")
